@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         body {
-          background-color: #e9dcc4;
+          background-color: #cbb9a0;
           background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
           background-repeat: repeat;
           background-size: auto;
         }
         section {
-          background-color: #e9dcc4;
+          background-color: #cbb9a0;
           background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
           background-repeat: repeat;
           background-size: auto;
@@ -104,52 +104,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-r from-blue-500 to-blue-700 pt-20 pb-32">
+    <section id="home" class="relative bg-gradient-to-r from-blue-500 to-blue-700 pt-24 pb-32">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-gradient-to-t from-blue-900/60 to-blue-700/30"></div>
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                <div class="md:w-1/2 mb-10 md:mb-0 relative">
+                    <div class="absolute inset-0 pointer-events-none -z-10">
+                        <div class="w-full h-full bg-gradient-to-br from-blue-900/80 to-blue-500/0 rounded-xl"></div>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight relative"
+                        data-aos="fade-right" data-aos-delay="200">
                         Transform Your Property With <span class="text-yellow-300">Professional</span> Pressure Washing
                     </h1>
-                    <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-lg">
+                    <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-lg relative"
+                        data-aos="fade-left" data-aos-delay="400">
                         Revitalize your home's exterior with our premium pressure washing services. From driveways to decks, we make surfaces look brand new.
                     </p>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300 shadow-lg cta-button flex items-center justify-center">
-                            <i class="fas fa-calendar-alt mr-2"></i>
-                            Schedule Service
+                    <div class="relative z-20 mt-8 space-y-6">
+                      <div class="flex flex-col sm:flex-row gap-4 justify-start"
+                        data-aos="zoom-in-up" data-aos-delay="600">
+                        <a href="#contact" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                          <i class="fas fa-calendar-alt mr-2"></i>
+                          Schedule Service
                         </a>
-                        <a href="#services" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 cta-button flex items-center justify-center">
-                            <i class="fas fa-list-ul mr-2"></i>
-                            View Services
+                        <a href="#services" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                          <i class="fas fa-list-ul mr-2"></i>
+                          View Services
                         </a>
-                    </div>
-                    <div class="mt-8 flex items-center">
-                        <div class="flex -space-x-2">
-                        <img src="michael_johnson.jpg" alt="Michael Johnson - Customer" class="h-10 w-10 rounded-full border-2 border-white">
-                        <img src="assets/images/avatar2.jpg" alt="Sarah Williams - Customer" class="h-10 w-10 rounded-full border-2 border-white">
-                        <img src="assets/images/avatar3.jpg" alt="David Thompson - Customer" class="h-10 w-10 rounded-full border-2 border-white">
+                      </div>
+                      <div class="flex items-center space-x-4 bg-white bg-opacity-20 backdrop-blur-md rounded-full px-6 py-3 shadow-md border border-blue-100"
+                        data-aos="flip-up" data-aos-delay="800">
+                        <div class="flex items-center">
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
                         </div>
-                        <div class="ml-4">
-                            <div class="flex items-center">
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <span class="ml-2 text-white font-medium">5.0</span>
-                            </div>
-                            <p class="text-blue-100">From over 250+ reviews</p>
-                        </div>
+                        <p class="text-white text-lg font-semibold whitespace-nowrap">500+ 5-Star Reviews</p>
+                      </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
+                <div class="md:w-1/2 relative flex items-center justify-center">
                     <div class="relative">
-                        <div class="absolute -top-4 -left-4 bg-yellow-400 rounded-full p-6 z-10">
-                            <span class="text-blue-800 font-bold text-xl">25% OFF</span>
-                            <p class="text-blue-800 font-medium">First Service</p>
-                        </div>
                         <img src="tmpgfvqbmz1.webp" alt="Technician pressure washing a house exterior" class="rounded-lg shadow-2xl image-hover">
+                        <div class="absolute top-4 right-4 z-20">
+                            <div class="bg-yellow-400 rounded-full shadow-lg px-6 py-3 flex flex-col items-center border-2 border-yellow-300">
+                                <span class="text-blue-800 font-bold text-xl leading-none">25% OFF</span>
+                                <p class="text-blue-800 font-medium text-xs leading-none">First Service</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,24 +168,30 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-20 bg-white relative overflow-hidden" style="background-image: url('https://www.transparenttextures.com/patterns/geometry.png'); background-repeat: repeat;">
+        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/geometry.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why <span class="gradient-text">Choose Us?</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">We stand out with superior quality, fast turnaround, and a 100% satisfaction guarantee for every project we take on.</p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-award text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
                     <p class="text-gray-600">We use commercial-grade equipment and eco-friendly cleaning solutions for superior results every time.</p>
                 </div>
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-bolt text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Fast Service</h3>
                     <p class="text-gray-600">Our efficient team delivers quick turnaround times without sacrificing quality or attention to detail.</p>
                 </div>
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
                     </div>
@@ -190,19 +202,55 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14" data-aos="zoom-in">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">3y+</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Years in Business</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-check-double text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">500+</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Jobs Completed</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-headset text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">24/7</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Always Support</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-thumbs-up text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">100%</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Success Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
+    <section id="services" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Premium</span> Services</h2>
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our <span class="gradient-text">Premium</span> Services</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600">We offer comprehensive pressure washing solutions for residential and commercial properties.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
                     <img src="tmpadxr3c21.webp" alt="Residential Pressure Washing Service" class="w-full h-56 object-cover">
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Residential Pressure Washing</h3>
                         <p class="text-gray-600 mb-4">Complete exterior cleaning for homes, including siding, gutters, driveways, and patios.</p>
                         <ul class="space-y-2 mb-6">
@@ -211,15 +259,17 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Decks & Patios</li>
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fences & Outdoor Furniture</li>
                         </ul>
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
-                            Get Quote
-                        </a>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
                     <img src="assets/images/service2.jpg" alt="Commercial Pressure Washing Service" class="w-full h-56 object-cover">
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Commercial Pressure Washing</h3>
                         <p class="text-gray-600 mb-4">Professional cleaning services for businesses, storefront, and commercial properties.</p>
                         <ul class="space-y-2 mb-6">
@@ -228,32 +278,18 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Drive-Thrus & Loading Docks</li>
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sidewalks & Entryways</li>
                         </ul>
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
-                            Get Quote
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card">
-                    <img src="assets/images/service3.jpg" alt="Soft Washing Service" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">Soft Washing</h3>
-                        <p class="text-gray-600 mb-4">Gentle cleaning for delicate surfaces that removes dirt, mold, and mildew without damage.</p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Roof Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Solar Panel Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Stucco & Painted Surfaces</li>
-                        </ul>
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
-                            Get Quote
-                        </a>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Gutter & Fence Cleaning Section -->
             <div class="grid grid-cols-1 mt-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card">
-                    <div class="p-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Gutter &amp; Fence Cleaning</h3>
                         <p class="text-gray-600 mb-4">
                             Includes gutter debris removal, whitening of gutter exteriors, and thorough fence wash for both vinyl and wood.
@@ -263,14 +299,16 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter Exterior Whitening</li>
                             <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vinyl &amp; Wood Fence Washing</li>
                         </ul>
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
-                            Get Quote
-                        </a>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button">
+                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                     <i class="fas fa-list-alt mr-2"></i>
                     View All Services
                 </a>
@@ -312,7 +350,7 @@
                             <span class="font-medium">Satisfaction Guaranteed</span>
                         </div>
                     </div>
-                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button">
+                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                         <i class="fas fa-phone-alt mr-2"></i>
                         Contact Us Today
                     </a>
@@ -331,22 +369,22 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">1</div>
                     <h3 class="text-xl font-bold mb-3">Book Service</h3>
                     <p class="text-gray-600">Contact us via phone, email, or our online form to schedule a free consultation.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">2</div>
                     <h3 class="text-xl font-bold mb-3">Free Quote</h3>
                     <p class="text-gray-600">We'll assess your needs and provide a detailed quote with no hidden costs.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">3</div>
                     <h3 class="text-xl font-bold mb-3">Schedule Date</h3>
                     <p class="text-gray-600">Choose a convenient date and time that works best for your schedule.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">4</div>
                     <h3 class="text-xl font-bold mb-3">Enjoy Results</h3>
                     <p class="text-gray-600">Sit back and enjoy your beautifully cleaned property with satisfaction guaranteed.</p>
@@ -356,17 +394,17 @@
     </section>
 
     <!-- Before & After Section -->
-    <section id="projects" class="py-20 bg-white" data-aos="fade-up">
+    <section id="projects" class="py-24 bg-white" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Before &amp; After <span class="gradient-text">Transformations</span></h2>
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Before &amp; After <span class="gradient-text">Transformations</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600">See the dramatic difference our pressure washing services can make on your property.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                  <div class="swiper before-after-slider">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide relative">
                         <img src="assets/images/before1.jpg" alt="Before image" class="w-full">
@@ -389,8 +427,8 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                  <div class="swiper before-after-slider">
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide relative">
                         <img src="Dirty-driveway.jpg" alt="Before image" class="w-full">
@@ -413,8 +451,8 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                  <div class="swiper before-after-slider">
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide relative">
                         <img src="assets/images/before3.jpg" alt="Before image" class="w-full">
@@ -439,7 +477,7 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button">
+                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                     <i class="fas fa-images mr-2"></i>
                     View More Projects
                 </a>
@@ -448,16 +486,16 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-50">
+    <section id="testimonials" class="py-24 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Real Reviews</h2>
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Real Reviews</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600">Don't take our word for it. Here's what our satisfied customers have to say.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
@@ -475,7 +513,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
@@ -493,7 +531,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-8 rounded-xl shadow-lg testimonial-card">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
@@ -513,7 +551,7 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="#" class="inline-block text-blue-600 font-bold hover:text-blue-700 transition duration-300">
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:text-blue-700 transition duration-300">
                     Read More Reviews <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -529,7 +567,7 @@
                 <p class="text-lg text-gray-600">Competitive rates with no hidden fees. Custom quotes available for all services.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 service-card">
                     <div class="bg-gray-50 p-6 text-center border-b border-gray-200">
                         <h3 class="text-2xl font-bold text-gray-800">Residential</h3>
@@ -537,8 +575,7 @@
                     </div>
                     <div class="p-6">
                         <div class="text-center mb-6">
-                            <span class="text-4xl font-bold text-gray-800">$199</span>
-                            <span class="text-gray-600">/ starting at</span>
+                            <p class="text-lg text-gray-600">Pricing is based on a full property evaluation. We'll provide a custom quote tailored to your needs.</p>
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> House Exterior Washing</li>
@@ -548,7 +585,7 @@
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free Estimates</li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
+                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
@@ -563,8 +600,7 @@
                     </div>
                     <div class="p-6">
                         <div class="text-center mb-6">
-                            <span class="text-4xl font-bold text-gray-800">$349</span>
-                            <span class="text-gray-600">/ starting at</span>
+                            <p class="text-lg text-gray-600">Pricing determined after site evaluation to ensure accurate, fair quotes for every business.</p>
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Building Exterior Cleaning</li>
@@ -575,32 +611,7 @@
                             <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Maintenance Plans Available</li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
-                                Get Quote
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 service-card">
-                    <div class="bg-gray-50 p-6 text-center border-b border-gray-200">
-                        <h3 class="text-2xl font-bold text-gray-800">Specialty</h3>
-                        <p class="text-gray-600 mt-2">For specific cleaning needs</p>
-                    </div>
-                    <div class="p-6">
-                        <div class="text-center mb-6">
-                            <span class="text-4xl font-bold text-gray-800">$149</span>
-                            <span class="text-gray-600">/ starting at</span>
-                        </div>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Roof Soft Washing</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Solar Panel Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Gutter Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Window Washing</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Custom Solutions</li>
-                        </ul>
-                        <div class="text-center">
-                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button">
+                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
@@ -614,7 +625,7 @@
                         <h3 class="text-xl font-bold mb-2">Need a custom solution?</h3>
                         <p class="text-gray-600">Contact us for a personalized quote tailored to your specific needs.</p>
                     </div>
-                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow cta-button">
+                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                         Request Custom Quote
                     </a>
                 </div>
@@ -694,11 +705,11 @@
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Property?</h2>
                         <p class="text-lg text-gray-600 mb-6">Schedule your free consultation today and see how Water Wave can revitalize your home or business.</p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center">
+                            <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 <i class="fas fa-calendar-alt mr-2"></i>
                                 Schedule Service
                             </a>
-                            <a href="tel:205-948-5038" class="bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 cta-button flex items-center justify-center">
+                            <a href="tel:205-948-5038" class="bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 <i class="fas fa-phone-alt mr-2"></i>
                                 555-123-4567
                             </a>
@@ -722,10 +733,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600">Ready to get started? Contact us for a free quote or to schedule your service.</p>
             </div>
@@ -797,28 +808,28 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl shadow-lg p-8">
-                    <h3 class="text-2xl font-bold mb-6">Request a Free Quote</h3>
-                    <form>
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Request a Free Quote</h3>
+                    <form class="w-full">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="name">Your Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="John Doe">
                             </div>
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="email">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="john@example.com">
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="john@example.com">
                             </div>
                         </div>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="(555) 123-4567">
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="(555) 123-4567">
                             </div>
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="service">Primary Service Needed</label>
-                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
                                     <option>Select a Service</option>
                                     <option>Driveway</option>
                                     <option>Deck/Fence</option>
@@ -829,7 +840,7 @@
                         </div>
                         <div class="mb-6">
                             <label class="block text-gray-700 mb-2 font-medium" for="secondary-service">Second Service (optional)</label>
-                            <select id="secondary-service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <select id="secondary-service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
                                 <option>Select a Second Service</option>
                                 <option>Driveway</option>
                                 <option>Deck/Fence</option>
@@ -840,10 +851,10 @@
                         </div>
                         <div class="mb-6">
                             <label class="block text-gray-700 mb-2 font-medium" for="message">Add details about your project</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Add details about your project"></textarea>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="Add details about your project"></textarea>
                         </div>
                         
-                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center">
+                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Send Message
                         </button>
@@ -927,7 +938,9 @@
             
             <div class="border-t border-gray-800 pt-6">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Water Wave Pressure Washing. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Water Wave Pressure Washing. All rights reserved. <br> Developed by <span class="text-white font-bold">Ziontek LLC</span>
+                    </p>
                     <div class="flex space-x-6">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
