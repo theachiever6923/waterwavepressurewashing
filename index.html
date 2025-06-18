@@ -3,539 +3,1009 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Wave Exteriors - Professional Exterior Cleaning Services</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Water Wave Pressure Washing - Professional Cleaning Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #1e3a8a;
-            background: linear-gradient(135deg, #0ea5e9 0%, #1e40af 100%);
+          background-color: #cbb9a0;
+          background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+          background-repeat: repeat;
+          background-size: auto;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        section {
+          background-color: #cbb9a0;
+          background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+          background-repeat: repeat;
+          background-size: auto;
         }
-
-        /* Header */
-        header {
-            background: rgba(30, 58, 138, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo img {
-            height: 60px;
-            width: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo-text {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-        }
-
-        .nav-links a:hover {
-            background: rgba(239, 68, 68, 0.8);
-            transform: translateY(-2px);
-        }
-
-        .phone-number {
-            background: linear-gradient(45deg, #ef4444, #dc2626);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .phone-number:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0ea5e9 0%, #1e40af 100%);
-            padding: 120px 0 80px;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
+        .hero-wave {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><path d="M0,50 Q250,0 500,50 T1000,50 V100 H0 Z"/></svg>') repeat-x;
-            animation: wave 10s linear infinite;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            z-index: 1;
         }
-
-        @keyframes wave {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100px); }
+        .hero-wave svg {
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
+        .hero-wave .shape-fill {
+            fill: #FFFFFF;
         }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        .gradient-text {
+            background: linear-gradient(90deg, #0ea5e9, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        .image-hover {
+            transition: transform 0.3s ease-in-out;
         }
-
-        .cta-button {
-            background: linear-gradient(45deg, #ef4444, #dc2626);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
+        .image-hover:hover {
+            transform: scale(1.05);
         }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
-        }
-
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #1e40af;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(45deg, #ef4444, #dc2626);
-            border-radius: 2px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
         .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            border: 2px solid transparent;
         }
-
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            border-color: #0ea5e9;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-
-        .service-icon {
-            font-size: 3rem;
-            color: #0ea5e9;
-            margin-bottom: 1rem;
+        .testimonial-card {
+            transition: all 0.3s ease;
         }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #1e40af;
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-
-        .service-card p {
-            color: #64748b;
-            line-height: 1.6;
+        .cta-button {
+            transition: all 0.3s ease;
         }
-
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        .cta-button:hover {
+            transform: translateY(-3px);
         }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #1e40af;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: #475569;
-            line-height: 1.8;
-        }
-
-        .about-features {
-            list-style: none;
-            margin-top: 2rem;
-        }
-
-        .about-features li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            color: #1e40af;
-            font-weight: 500;
-        }
-
-        .about-features li i {
-            color: #ef4444;
-            margin-right: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .about-image {
-            text-align: center;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: #1e40af;
-            color: white;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: #ef4444;
-        }
-
-        /* Footer */
-        footer {
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .service-card:nth-child(1) { animation-delay: 0.1s; }
-        .service-card:nth-child(2) { animation-delay: 0.2s; }
-        .service-card:nth-child(3) { animation-delay: 0.3s; }
-        .service-card:nth-child(4) { animation-delay: 0.4s; }
     </style>
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="logo.webp" alt="Water Wave Exteriors Logo">
-                <span class="logo-text">Water Wave Exteriors</span>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span>
+                        <img src="./logo.webp" alt="Water Wave Logo" class="h-12 w-auto">
+                    </span>
+                </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Portfolio</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Testimonials</a>
+                    <a href="#contact" class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        Contact Us
+                    </a>
+                </div>
+                <div class="flex md:hidden items-center">
+                    <button class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="tel:205-948-5038" class="phone-number">
-                <i class="fas fa-phone"></i> 205-948-5038
-            </a>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Professional Exterior Cleaning</h1>
-                <p>Transform your property with our expert pressure washing and exterior cleaning services</p>
-                <a href="#contact" class="cta-button">Get Free Quote</a>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-500 to-blue-700 pt-24 pb-32">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-gradient-to-t from-blue-900/60 to-blue-700/30"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 relative">
+                    <div class="absolute inset-0 pointer-events-none -z-10">
+                        <div class="w-full h-full bg-gradient-to-br from-blue-900/80 to-blue-500/0 rounded-xl"></div>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight relative"
+                        data-aos="fade-right" data-aos-delay="200">
+                        Transform Your Property With <span class="text-yellow-300">Professional</span> Pressure Washing
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-lg relative"
+                        data-aos="fade-left" data-aos-delay="400">
+                        Revitalize your home's exterior with our premium pressure washing services. From driveways to decks, we make surfaces look brand new.
+                    </p>
+                    <div class="relative z-20 mt-8 space-y-6">
+                      <div class="flex flex-col sm:flex-row gap-4 justify-start"
+                        data-aos="zoom-in-up" data-aos-delay="600">
+                        <a href="#contact" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                          <i class="fas fa-calendar-alt mr-2"></i>
+                          Schedule Service
+                        </a>
+                        <a href="#services" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                          <i class="fas fa-list-ul mr-2"></i>
+                          View Services
+                        </a>
+                      </div>
+                      <div class="flex items-center space-x-4 bg-white bg-opacity-20 backdrop-blur-md rounded-full px-6 py-3 shadow-md border border-blue-100"
+                        data-aos="flip-up" data-aos-delay="800">
+                        <div class="flex items-center">
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        </div>
+                        <p class="text-white text-lg font-semibold whitespace-nowrap">500+ 5-Star Reviews</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative flex items-center justify-center">
+                    <div class="relative">
+                        <img src="tmpgfvqbmz1.webp" alt="Technician pressure washing a house exterior" class="rounded-lg shadow-2xl image-hover">
+                        <div class="absolute top-4 right-4 z-20">
+                            <div class="bg-yellow-400 rounded-full shadow-lg px-6 py-3 flex flex-col items-center border-2 border-yellow-300">
+                                <span class="text-blue-800 font-bold text-xl leading-none">25% OFF</span>
+                                <p class="text-blue-800 font-medium text-xs leading-none">First Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white relative overflow-hidden" style="background-image: url('https://www.transparenttextures.com/patterns/geometry.png'); background-repeat: repeat;">
+        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/geometry.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why <span class="gradient-text">Choose Us?</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">We stand out with superior quality, fast turnaround, and a 100% satisfaction guarantee for every project we take on.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-award text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
+                    <p class="text-gray-600">We use commercial-grade equipment and eco-friendly cleaning solutions for superior results every time.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fast Service</h3>
+                    <p class="text-gray-600">Our efficient team delivers quick turnaround times without sacrificing quality or attention to detail.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">100% Satisfaction</h3>
+                    <p class="text-gray-600">Your satisfaction is guaranteed. If you're not happy with our work, we'll come back and fix it for free.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14" data-aos="zoom-in">
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">3y+</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Years in Business</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-check-double text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">500+</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Jobs Completed</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-headset text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">24/7</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Always Support</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+              <i class="fas fa-thumbs-up text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-4xl font-bold text-gray-900">100%</h3>
+            <p class="text-orange-500 mt-2 font-semibold">Success Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our <span class="gradient-text">Premium</span> Services</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">We offer comprehensive pressure washing solutions for residential and commercial properties.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+                    <img src="tmpadxr3c21.webp" alt="Residential Pressure Washing Service" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-3">Residential Pressure Washing</h3>
+                        <p class="text-gray-600 mb-4">Complete exterior cleaning for homes, including siding, gutters, driveways, and patios.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> House Siding & Gutters</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Driveways & Walkways</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Decks & Patios</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fences & Outdoor Furniture</li>
+                        </ul>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
-                    <h3>House Washing</h3>
-                    <p>Professional soft washing and pressure washing services to restore your home's exterior beauty and curb appeal.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-road"></i>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+                    <img src="assets/images/service2.jpg" alt="Commercial Pressure Washing Service" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-3">Commercial Pressure Washing</h3>
+                        <p class="text-gray-600 mb-4">Professional cleaning services for businesses, storefront, and commercial properties.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Building Exteriors</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Parking Lots & Garages</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Drive-Thrus & Loading Docks</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sidewalks & Entryways</li>
+                        </ul>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
-                    <h3>Concrete Cleaning</h3>
-                    <p>Deep cleaning for driveways, sidewalks, patios, and all concrete surfaces to remove stains and buildup.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-window-maximize"></i>
+            </div>
+            <!-- Gutter & Fence Cleaning Section -->
+            <div class="grid grid-cols-1 mt-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-3">Gutter &amp; Fence Cleaning</h3>
+                        <p class="text-gray-600 mb-4">
+                            Includes gutter debris removal, whitening of gutter exteriors, and thorough fence wash for both vinyl and wood.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter Debris Removal</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter Exterior Whitening</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vinyl &amp; Wood Fence Washing</li>
+                        </ul>
+                        <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
                     </div>
-                    <h3>Window Cleaning</h3>
-                    <p>Crystal clear window cleaning services for residential and commercial properties, inside and out.</p>
                 </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                    <i class="fas fa-list-alt mr-2"></i>
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-10">
+                    <img src="tmpoz654wki.webp" alt="Water Wave Pressure Washing team at work" class="rounded-lg shadow-xl image-hover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gradient-text">Water Wave</span></h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Water Wave Pressure Washing is a premier cleaning service dedicated to restoring and maintaining the beauty of residential and commercial properties through professional pressure washing.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        With years of experience and a commitment to excellence, our team delivers superior results that protect your investment while enhancing curb appeal.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="font-medium">5+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="font-medium">Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="font-medium">Eco-Friendly Solutions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="font-medium">Satisfaction Guaranteed</span>
+                        </div>
                     </div>
-                    <h3>Roof Washing</h3>
-                    <p>Safe and effective roof cleaning to remove algae, moss, and stains while protecting your investment.</p>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        Contact Us Today
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Water Wave Exteriors?</h2>
-                    <p>With years of experience in exterior cleaning, we pride ourselves on delivering exceptional results that exceed our customers' expectations. Our team uses state-of-the-art equipment and eco-friendly cleaning solutions.</p>
-                    <p>We understand that your property is one of your most valuable investments, which is why we treat every job with the care and attention it deserves.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check-circle"></i> Licensed & Insured</li>
-                        <li><i class="fas fa-check-circle"></i> Eco-Friendly Solutions</li>
-                        <li><i class="fas fa-check-circle"></i> Professional Equipment</li>
-                        <li><i class="fas fa-check-circle"></i> Satisfaction Guaranteed</li>
-                        <li><i class="fas fa-check-circle"></i> Free Estimates</li>
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Simple <span class="gradient-text">Process</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">We make getting your property cleaned quick and hassle-free with our simple 4-step process.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">1</div>
+                    <h3 class="text-xl font-bold mb-3">Book Service</h3>
+                    <p class="text-gray-600">Contact us via phone, email, or our online form to schedule a free consultation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">2</div>
+                    <h3 class="text-xl font-bold mb-3">Free Quote</h3>
+                    <p class="text-gray-600">We'll assess your needs and provide a detailed quote with no hidden costs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">3</div>
+                    <h3 class="text-xl font-bold mb-3">Schedule Date</h3>
+                    <p class="text-gray-600">Choose a convenient date and time that works best for your schedule.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">4</div>
+                    <h3 class="text-xl font-bold mb-3">Enjoy Results</h3>
+                    <p class="text-gray-600">Sit back and enjoy your beautifully cleaned property with satisfaction guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section id="projects" class="py-24 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Before &amp; After <span class="gradient-text">Transformations</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">See the dramatic difference our pressure washing services can make on your property.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide relative">
+                        <img src="IMG_2593.jpeg" alt="Before image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img src="IMG_1982.jpeg" alt="After image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Concrete Driveway Cleaning</h3>
+                    <p class="text-gray-600">
+                      Removed years of dirt, grime, and oil stains for a like-new appearance.
+                      <br>
+                      Improved curb appeal and safety by eliminating slippery surfaces.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide relative">
+                        <img src="IMG_1983.jpeg" alt="Before image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img src="IMG_1982.jpeg" alt="After image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">House Wash</h3>
+                    <p class="text-gray-600">
+                      Eliminated mold, mildew, and algae for a fresh, clean appearance.
+                      <br>
+                      Boosted overall home appearance and longevity of siding materials.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide relative">
+                        <img src="assets/images/before3.jpg" alt="Before image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
+                      </div>
+                      <div class="swiper-slide relative">
+                        <img src="assets/images/after3.jpg" alt="After image" class="w-full">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Restored and sealed deck to protect and beautify outdoor spaces.</h3>
+                    <p class="text-gray-600">
+                      Restored weathered wood to its original beauty and protected from further damage.
+                      <br>
+                      Sealed the deck for long-lasting protection and a refreshed outdoor living area.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                    <i class="fas fa-images mr-2"></i>
+                    View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Real Reviews</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Don't take our word for it. Here's what our satisfied customers have to say.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Water Wave transformed my home's exterior! My driveway and siding look brand new. Professional, on time, and reasonably priced. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/avatar1.jpg" alt="Michael Johnson - Homeowner" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Johnson</h4>
+                            <p class="text-gray-600 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"As a business owner, first impressions are everything. Water Wave keeps our storefront and parking lot spotless. Their attention to detail is impressive, and our customers always notice the difference!"</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/avatar2.jpg" alt="Sarah Williams - Business Owner" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Williams</h4>
+                            <p class="text-gray-600 text-sm">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg testimonial-card border border-gray-200" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The team at Water Wave went above and beyond. My 20-year-old patio looks better than it has in years! They were professional, thorough, and the price was very reasonable. I'll definitely use them again."</p>
+                    <div class="flex items-center">
+                        <img src="assets/images/avatar3.jpg" alt="David Thompson - Homeowner" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Thompson</h4>
+                            <p class="text-gray-600 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:text-blue-700 transition duration-300">
+                    Read More Reviews <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900">Our Trusted <span class="gradient-text">Clients</span></h2>
+        <p class="text-lg md:text-xl text-gray-600 mb-10">Proudly serving top businesses and respected organizations in our community</p>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mb-10"></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
+          <img src="IMG_0516.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0517.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0520.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0521.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0522.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0523.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0524.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          <img src="IMG_0525 2.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent <span class="gradient-text">Pricing</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Competitive rates with no hidden fees. Custom quotes available for all services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 service-card">
+                    <div class="bg-gray-50 p-6 text-center border-b border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-800">Residential</h3>
+                        <p class="text-gray-600 mt-2">Perfect for homeowners</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <p class="text-lg text-gray-600">Pricing is based on a full property evaluation. We'll provide a custom quote tailored to your needs.</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> House Exterior Washing</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Driveway Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Deck/Patio Washing</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Fence Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free Estimates</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl border-2 border-blue-500 transform scale-105 service-card">
+                    <div class="bg-blue-600 p-6 text-center">
+                        <span class="inline-block bg-yellow-400 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">Most Popular</span>
+                        <h3 class="text-2xl font-bold text-white">Commercial</h3>
+                        <p class="text-blue-100 mt-2">For businesses of all sizes</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <p class="text-lg text-gray-600">Pricing determined after site evaluation to ensure accurate, fair quotes for every business.</p>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Building Exterior Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Parking Lot Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Sidewalk Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Dumpster Area Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free Consultation</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Maintenance Plans Available</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 rounded-xl p-8 mt-12 border-l-4 border-blue-500">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <h3 class="text-xl font-bold mb-2">Need a custom solution?</h3>
+                        <p class="text-gray-600">Contact us for a personalized quote tailored to your specific needs.</p>
+                    </div>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                        Request Custom Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Find answers to our most commonly asked questions about our pressure washing services.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle-button flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold text-gray-800">How long does pressure washing take?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>1-3 hours depending on size.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle-button flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold text-gray-800">Is pressure washing safe for all surfaces?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Not all surfaces can withstand high-pressure washing. We assess each surface and use appropriate techniques, including soft washing for delicate areas like roofs, windows, and some siding materials. Our experts know exactly what pressure and cleaning solutions to use for each surface.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle-button flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold text-gray-800">Are your cleaning solutions environmentally friendly?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Yes, we use eco-friendly, biodegradable cleaning solutions that effectively remove dirt, mold, and mildew without harming your landscaping, pets, or the environment. Our process is designed to be both powerful and responsible.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle-button flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold text-gray-800">How often should I have my property pressure washed?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>For most residential properties, we recommend pressure washing once or twice a year to maintain appearance and prevent buildup of harmful substances. Commercial properties may require more frequent cleaning depending on foot traffic and location.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <button class="faq-toggle-button flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold text-gray-800">Do you offer any guarantees?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Absolutely! We offer a 100% satisfaction guarantee. If you're not completely satisfied with our work, we'll return and address any areas of concern at no additional cost to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-xl p-8 md:p-12 shadow-xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Property?</h2>
+                        <p class="text-lg text-gray-600 mb-6">Schedule your free consultation today and see how Water Wave can revitalize your home or business.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                Schedule Service
+                            </a>
+                            <a href="tel:205-948-5038" class="bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                205-948-5038
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                            <h3 class="text-xl font-bold mb-4 flex items-center">
+                                <i class="fas fa-tag text-blue-600 mr-2"></i>
+                                Special Offer
+                            </h3>
+                            <p class="text-gray-700 mb-4">Get 25% off your first service when you book this month!</p>
+                            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
+                                <p class="font-bold text-yellow-800">Use code: FIRSTWAVE25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">Ready to get started? Contact us for a free quote or to schedule your service.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-blue-50 p-8 rounded-xl mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Our Location</h4>
+                                    <p class="text-gray-600">240 StoneCreek Way Helena, AL 35080</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Call Us</h4>
+                                    <p class="text-gray-600">205-948-5038</p>
+                                    <p class="text-gray-600">Mon-Sat: 8AM - 6PM</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email Us</h4>
+                                    <p class="text-gray-600">Grant@callwaterwave.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6">Service Areas</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Helena</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Hoover</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Homewood</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Chelsea</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Alabaster</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Pelham</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Mountain Brook</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Vestavia Hills</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                                <span>Calera</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Request a Free Quote</h3>
+                    <form class="w-full">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium" for="name">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium" for="email">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium" for="service">Primary Service Needed</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
+                                    <option>Select a Service</option>
+                                    <option>Concrete Cleaning</option>
+                                    <option>Brick Cleaning</option>
+                                    <option>House Wash</option>
+                                    <option>Deck/Fence Wash</option>
+                                    <option>Commercial Pressure Washing</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2 font-medium" for="secondary-service">Second Service (optional)</label>
+                            <select id="secondary-service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
+                                <option>Select a Service</option>
+                                <option>Concrete Cleaning</option>
+                                <option>Brick Cleaning</option>
+                                <option>House Wash</option>
+                                <option>Deck/Fence Wash</option>
+                                <option>Commercial Pressure Washing</option>
+                            </select>
+                            <p class="text-xs text-gray-500 mt-2">If you need more than one service, please select a second option.</p>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2 font-medium" for="message">Add details about your project</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="Add details about your project"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="./logo.webp" alt="Water Wave Logo" class="h-12 w-auto">
+                    </div>
+                    <p class="text-gray-400 mb-6">Professional pressure washing services for residential and commercial properties. Quality service guaranteed.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Professional cleaning service">
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Concrete Cleaning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brick Cleaning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">House Wash</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Deck/Fence Wash</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Pressure Washing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Hours of Operation</h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Monday - Friday:</span>
+                            <span class="text-white">8:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Saturday:</span>
+                            <span class="text-white">9:00 AM - 4:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Sunday:</span>
+                            <span class="text-white">Closed</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-gray-800 rounded-lg">
+                        <p class="text-blue-400 font-bold">Emergency Service Available</p>
+                        <p class="text-gray-400">Call: 205-948-5038</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Ready to Transform Your Property?</h2>
-            <p>Contact us today for a free estimate and see the Water Wave Exteriors difference!</p>
-            <a href="tel:205-948-5038" class="cta-button">Call Now: 205-948-5038</a>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>205-948-5038</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@waterwaveexteriors.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Serving Birmingham, AL Area</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Water Wave Exteriors. All rights reserved. | Professional Exterior Cleaning Services</p>
-        </div>
-    </footer>
-
+            
+            <div class="border-t border-gray-800 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Water Wave Pressure Washing. All rights reserved. <br> Developed by <span class="text-white font-bold">Ziontek LLC</span>
+                    </p>
+                    <div class="flex space-x-6">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+      // Swiper sliders for Before & After
+      document.addEventListener('DOMContentLoaded', function () {
+        const sliders = document.querySelectorAll('.before-after-slider');
+        sliders.forEach((slider) => {
+          new Swiper(slider, {
+            loop: true,
+            autoplay: {
+              delay: 4000,
+            },
+            pagination: {
+              el: slider.querySelector('.swiper-pagination'),
+              clickable: true,
+            },
+          });
         });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(30, 58, 138, 0.98)';
-            } else {
-                header.style.background = 'rgba(30, 58, 138, 0.95)';
-            }
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card').forEach(card => {
-            observer.observe(card);
-        });
+      });
     </script>
-</body>
-</html>
+    <script>
+      document.querySelectorAll('.faq-toggle-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('i');
+          content.classList.toggle('hidden');
+          icon.classList.toggle('fa-chevron-down');
+          icon.classList.toggle('fa-chevron-up');
+        });
+      });
+    </script>
