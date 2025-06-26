@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,19 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         body {
-          background-color: #cbb9a0;
-          background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-          background-repeat: repeat;
-          background-size: auto;
+            background-color: #cbb9a0;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            background-repeat: repeat;
+            background-size: auto;
         }
+
         section {
-          background-color: #cbb9a0;
-          background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-          background-repeat: repeat;
-          background-size: auto;
+            background-color: #cbb9a0;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            background-repeat: repeat;
+            background-size: auto;
         }
+
         .hero-wave {
             position: absolute;
             bottom: 0;
@@ -30,66 +33,84 @@
             line-height: 0;
             z-index: 1;
         }
+
         .hero-wave svg {
             display: block;
             width: calc(100% + 1.3px);
             height: 80px;
         }
+
         .hero-wave .shape-fill {
             fill: #FFFFFF;
         }
+
         .gradient-text {
             background: linear-gradient(90deg, #98ccd9, #0673ab);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .image-hover {
             transition: transform 0.3s ease-in-out;
         }
+
         .image-hover:hover {
             transform: scale(1.05);
         }
+
         .service-card {
             transition: all 0.3s ease;
         }
+
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+
         .testimonial-card {
             transition: all 0.3s ease;
         }
+
         .testimonial-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+
         .cta-button {
             transition: all 0.3s ease;
         }
+
         .cta-button:hover {
             transform: translateY(-3px);
         }
     </style>
 </head>
+
 <body class="font-sans antialiased text-gray-800">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <span>
-                        <img src="IMG_0954.jpeg" alt="Water Wave Logo" class="h-12 w-auto">
-                    </span>
-                </div>
+                    <div class="flex-shrink-0 flex items-center">
+                        <span>
+                            <img src="IMG_0954.jpeg" alt="Water Wave Logo" class="h-12 w-auto">
+                        </span>
+                    </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-10">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Portfolio</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Testimonials</a>
-                    <a href="#contact" class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button flex items-center">
+                    <a href="#home"
+                        class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                    <a href="#services"
+                        class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Services</a>
+                    <a href="#about"
+                        class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
+                    <a href="#projects"
+                        class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Portfolio</a>
+                    <a href="#testimonials"
+                        class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Testimonials</a>
+                    <a href="#contact"
+                        class="bg-blue-600 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button flex items-center">
                         <i class="fas fa-phone-alt mr-2"></i>
                         Contact Us
                     </a>
@@ -118,43 +139,49 @@
                         data-aos="fade-right" data-aos-delay="200">
                         Transform Your Property With <span class="text-yellow-300">Professional</span> Pressure Washing
                     </h1>
-                    <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-lg relative"
-                        data-aos="fade-left" data-aos-delay="400">
-                        Revitalize your home's exterior with our premium pressure washing services. From driveways to decks, we make surfaces look brand new.
+                    <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-lg relative" data-aos="fade-left"
+                        data-aos-delay="400">
+                        Revitalize your home's exterior with our premium pressure washing services. From driveways to
+                        decks, we make surfaces look brand new.
                     </p>
                     <div class="relative z-20 mt-8 space-y-6">
-                      <div class="flex flex-col sm:flex-row gap-4 justify-start"
-                        data-aos="zoom-in-up" data-aos-delay="600">
-                        <a href="#contact" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
-                          <i class="fas fa-calendar-alt mr-2"></i>
-                          Schedule Service
-                        </a>
-                        <a href="#services" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
-                          <i class="fas fa-list-ul mr-2"></i>
-                          View Services
-                        </a>
-                      </div>
-        
-                      <div class="flex items-center space-x-4 bg-white bg-opacity-20 backdrop-blur-md rounded-full px-6 py-3 shadow-md border border-blue-100"
-                        data-aos="flip-up" data-aos-delay="800">
-                        <div class="flex items-center">
-                          <i class="fas fa-star text-yellow-400 text-xl"></i>
-                          <i class="fas fa-star text-yellow-400 text-xl"></i>
-                          <i class="fas fa-star text-yellow-400 text-xl"></i>
-                          <i class="fas fa-star text-yellow-400 text-xl"></i>
-                          <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-start" data-aos="zoom-in-up"
+                            data-aos-delay="600">
+                            <a href="#contact"
+                                class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                Schedule Service
+                            </a>
+                            <a href="#services"
+                                class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                                <i class="fas fa-list-ul mr-2"></i>
+                                View Services
+                            </a>
                         </div>
-                          <i class="fas fa-list-ul mr-2"></i>
-                         <a href="#testimonials" class="text-white text-lg font-semibold whitespace-nowrap">500+ 5-Star Reviews</a> 
-                        </a> 
-                      </div>
+
+                        <div class="flex items-center space-x-4 bg-white bg-opacity-20 backdrop-blur-md rounded-full px-6 py-3 shadow-md border border-blue-100"
+                            data-aos="flip-up" data-aos-delay="800">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                            </div>
+                            <i class="fas fa-list-ul mr-2"></i>
+                            <a href="#testimonials" class="text-white text-lg font-semibold whitespace-nowrap">500+
+                                5-Star Reviews</a>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="md:w-1/2 relative flex items-center justify-center">
                     <div class="relative">
-                        <img src="tmpgfvqbmz1.webp" alt="Technician pressure washing a house exterior" class="rounded-lg shadow-2xl image-hover">
+                        <img src="tmpgfvqbmz1.webp" alt="Technician pressure washing a house exterior"
+                            class="rounded-lg shadow-2xl image-hover">
                         <div class="absolute top-4 right-4 z-20">
-                            <div class="bg-yellow-400 rounded-full shadow-lg px-6 py-3 flex flex-col items-center border-2 border-yellow-300">
+                            <div
+                                class="bg-yellow-400 rounded-full shadow-lg px-6 py-3 flex flex-col items-center border-2 border-yellow-300">
                                 <span class="text-blue-800 font-bold text-xl leading-none">25% OFF</span>
                                 <p class="text-blue-800 font-medium text-xs leading-none">First Service</p>
                             </div>
@@ -164,42 +191,55 @@
             </div>
         </div>
         <div class="hero-wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-white relative overflow-hidden" style="background-image: url('https://www.transparenttextures.com/patterns/geometry.png'); background-repeat: repeat;">
-        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/geometry.png')]"></div>
+    <section class="py-20 bg-white relative overflow-hidden"
+        style="background-image: url('https://www.transparenttextures.com/patterns/geometry.png'); background-repeat: repeat;">
+        <div
+            class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/geometry.png')]">
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <h2 class="text-4xl font-bold mb-4">Why <span class="gradient-text">Choose Us?</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">We stand out with superior quality, fast turnaround, and a 100% satisfaction guarantee for every project we take on.</p>
+                <p class="text-lg text-gray-600">We stand out with superior quality, fast turnaround, and a 100%
+                    satisfaction guarantee for every project we take on.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-award text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
-                    <p class="text-gray-600">We use commercial-grade equipment and eco-friendly cleaning solutions for superior results every time.</p>
+                    <p class="text-gray-600">We use commercial-grade equipment and eco-friendly cleaning solutions for
+                        superior results every time.</p>
                 </div>
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500"
+                    data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-bolt text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Fast Service</h3>
-                    <p class="text-gray-600">Our efficient team delivers quick turnaround times without sacrificing quality or attention to detail.</p>
+                    <p class="text-gray-600">Our efficient team delivers quick turnaround times without sacrificing
+                        quality or attention to detail.</p>
                 </div>
-                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-blue-50 p-8 rounded-xl hover:shadow-lg transition duration-300 border-l-4 border-blue-500"
+                    data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">100% Satisfaction</h3>
-                    <p class="text-gray-600">Your satisfaction is guaranteed. If you're not happy with our work, we'll come back and fix it for free.</p>
+                    <p class="text-gray-600">Your satisfaction is guaranteed. If you're not happy with our work, we'll
+                        come back and fix it for free.</p>
                 </div>
             </div>
         </div>
@@ -207,38 +247,38 @@
 
     <!-- Stats Section -->
     <section class="py-20 bg-gray-100">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14" data-aos="zoom-in">
-          <div class="flex flex-col items-center">
-            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
-              <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14" data-aos="zoom-in">
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+                        <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900">3y+</h3>
+                    <p class="text-orange-500 mt-2 font-semibold">Years in Business</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+                        <i class="fas fa-check-double text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900">500+</h3>
+                    <p class="text-orange-500 mt-2 font-semibold">Jobs Completed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900">24/7</h3>
+                    <p class="text-orange-500 mt-2 font-semibold">Always Support</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
+                        <i class="fas fa-thumbs-up text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900">100%</h3>
+                    <p class="text-orange-500 mt-2 font-semibold">Success Rate</p>
+                </div>
             </div>
-            <h3 class="text-4xl font-bold text-gray-900">3y+</h3>
-            <p class="text-orange-500 mt-2 font-semibold">Years in Business</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
-              <i class="fas fa-check-double text-blue-600 text-2xl"></i>
-            </div>
-            <h3 class="text-4xl font-bold text-gray-900">500+</h3>
-            <p class="text-orange-500 mt-2 font-semibold">Jobs Completed</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
-              <i class="fas fa-headset text-blue-600 text-2xl"></i>
-            </div>
-            <h3 class="text-4xl font-bold text-gray-900">24/7</h3>
-            <p class="text-orange-500 mt-2 font-semibold">Always Support</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mb-4">
-              <i class="fas fa-thumbs-up text-blue-600 text-2xl"></i>
-            </div>
-            <h3 class="text-4xl font-bold text-gray-900">100%</h3>
-            <p class="text-orange-500 mt-2 font-semibold">Success Rate</p>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Services Section -->
@@ -247,42 +287,58 @@
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <h2 class="text-4xl font-bold mb-4">Our <span class="gradient-text">Premium</span> Services</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">We offer comprehensive pressure washing solutions for residential and commercial properties.</p>
+                <p class="text-lg text-gray-600">We offer comprehensive pressure washing solutions for residential and
+                    commercial properties.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
-                    <img src="tmpadxr3c21.webp" alt="Residential Pressure Washing Service" class="w-full h-56 object-cover">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full"
+                    data-aos="fade-up">
+                    <img src="tmpadxr3c21.webp" alt="Residential Pressure Washing Service"
+                        class="w-full h-56 object-cover">
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Residential Pressure Washing</h3>
-                        <p class="text-gray-600 mb-4">Complete exterior cleaning for homes, including siding, gutters, driveways, and patios.</p>
+                        <p class="text-gray-600 mb-4">Complete exterior cleaning for homes, including siding, gutters,
+                            driveways, and patios.</p>
                         <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> House Siding & Gutters</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Driveways & Walkways</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Decks & Patios</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fences & Outdoor Furniture</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> House
+                                Siding & Gutters</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Driveways & Walkways</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Decks
+                                & Patios</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fences
+                                & Outdoor Furniture</li>
                         </ul>
                         <div class="mt-auto">
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full"
+                    data-aos="fade-up">
                     <img src="service2.JPG" alt="Commercial Pressure Washing Service" class="w-full h-56 object-cover">
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Commercial Pressure Washing</h3>
-                        <p class="text-gray-600 mb-4">Professional cleaning services for businesses, storefront, and commercial properties.</p>
+                        <p class="text-gray-600 mb-4">Professional cleaning services for businesses, storefront, and
+                            commercial properties.</p>
                         <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Building Exteriors</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Parking Lots & Garages</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Drive-Thrus & Loading Docks</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sidewalks & Entryways</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Building Exteriors</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Parking Lots & Garages</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Drive-Thrus & Loading Docks</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Sidewalks & Entryways</li>
                         </ul>
                         <div class="mt-auto">
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
@@ -291,19 +347,25 @@
             </div>
             <!-- Gutter & Fence Cleaning Section -->
             <div class="grid grid-cols-1 mt-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full" data-aos="fade-up">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg service-card flex flex-col h-full"
+                    data-aos="fade-up">
                     <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold mb-3">Gutter &amp; Fence Cleaning</h3>
                         <p class="text-gray-600 mb-4">
-                            Includes gutter debris removal, whitening of gutter exteriors, and thorough fence wash for both vinyl and wood.
+                            Includes gutter debris removal, whitening of gutter exteriors, and thorough fence wash for
+                            both vinyl and wood.
                         </p>
                         <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter Debris Removal</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter Exterior Whitening</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vinyl &amp; Wood Fence Washing</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter
+                                Debris Removal</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Gutter
+                                Exterior Whitening</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vinyl
+                                &amp; Wood Fence Washing</li>
                         </ul>
                         <div class="mt-auto">
-                        <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
@@ -311,7 +373,8 @@
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                <a href="#contact"
+                    class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                     <i class="fas fa-list-alt mr-2"></i>
                     View All Services
                 </a>
@@ -324,16 +387,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-10">
-                    <img src="tmpoz654wki.webp" alt="Water Wave Pressure Washing team at work" class="rounded-lg shadow-xl image-hover">
+                    <img src="tmpoz654wki.webp" alt="Water Wave Pressure Washing team at work"
+                        class="rounded-lg shadow-xl image-hover">
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gradient-text">Water Wave</span></h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gradient-text">Water Wave</span>
+                    </h2>
                     <div class="w-20 h-1 bg-blue-600 mb-6"></div>
                     <p class="text-lg text-gray-700 mb-6">
-                        Water Wave Pressure Washing is a premier cleaning service dedicated to restoring and maintaining the beauty of residential and commercial properties through professional pressure washing.
+                        Water Wave Pressure Washing is a premier cleaning service dedicated to restoring and maintaining
+                        the beauty of residential and commercial properties through professional pressure washing.
                     </p>
                     <p class="text-lg text-gray-700 mb-6">
-                        With years of experience and a commitment to excellence, our team delivers superior results that protect your investment while enhancing curb appeal.
+                        With years of experience and a commitment to excellence, our team delivers superior results that
+                        protect your investment while enhancing curb appeal.
                     </p>
                     <div class="grid grid-cols-2 gap-6 mb-8">
                         <div class="flex items-center">
@@ -353,7 +420,8 @@
                             <span class="font-medium">Satisfaction Guaranteed</span>
                         </div>
                     </div>
-                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                    <a href="#contact"
+                        class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                         <i class="fas fa-phone-alt mr-2"></i>
                         Contact Us Today
                     </a>
@@ -366,31 +434,48 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Simple <span class="gradient-text">Process</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Simple <span class="gradient-text">Process</span>
+                </h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">We make getting your property cleaned quick and hassle-free with our simple 4-step process.</p>
+                <p class="text-lg text-gray-600">We make getting your property cleaned quick and hassle-free with our
+                    simple 4-step process.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">1</div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">
+                        1</div>
                     <h3 class="text-xl font-bold mb-3">Book Service</h3>
-                    <p class="text-gray-600">Contact us via phone, email, or our online form to schedule a free consultation.</p>
+                    <p class="text-gray-600">Contact us via phone, email, or our online form to schedule a free
+                        consultation.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">2</div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">
+                        2</div>
                     <h3 class="text-xl font-bold mb-3">Free Quote</h3>
-                    <p class="text-gray-600">We'll assess your needs and provide a detailed quote with no hidden costs.</p>
+                    <p class="text-gray-600">We'll assess your needs and provide a detailed quote with no hidden costs.
+                    </p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">3</div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">
+                        3</div>
                     <h3 class="text-xl font-bold mb-3">Schedule Date</h3>
                     <p class="text-gray-600">Choose a convenient date and time that works best for your schedule.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">4</div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center relative service-card" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div
+                        class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl">
+                        4</div>
                     <h3 class="text-xl font-bold mb-3">Enjoy Results</h3>
-                    <p class="text-gray-600">Sit back and enjoy your beautifully cleaned property with satisfaction guaranteed.</p>
+                    <p class="text-gray-600">Sit back and enjoy your beautifully cleaned property with satisfaction
+                        guaranteed.</p>
                 </div>
             </div>
         </div>
@@ -400,87 +485,106 @@
     <section id="projects" class="py-24 bg-white" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-4xl mx-auto mb-16">
-                <h2 class="text-4xl font-bold mb-4">Before &amp; After <span class="gradient-text">Transformations</span></h2>
+                <h2 class="text-4xl font-bold mb-4">Before &amp; After <span
+                        class="gradient-text">Transformations</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">See the dramatic difference our pressure washing services can make on your property.</p>
+                <p class="text-lg text-gray-600">See the dramatic difference our pressure washing services can make on
+                    your property.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="100">
-                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide relative">
-                        <img src="before1.JPG" alt="Before image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img src="after1.JPG" alt="After image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
-                      </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide relative">
+                                <img src="before1.JPG" alt="Before image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    BEFORE</div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="after1.JPG" alt="After image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    AFTER</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Concrete and Brick Cleaning</h3>
-                    <p class="text-gray-600">
-                      Removed years of dirt, grime, and oil stains for a like-new appearance.
-                      <br>
-                      Improved curb appeal and safety by eliminating slippery surfaces.
-                    </p>
-                  </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Concrete and Brick Cleaning</h3>
+                        <p class="text-gray-600">
+                            Removed years of dirt, grime, and oil stains for a like-new appearance.
+                            <br>
+                            Improved curb appeal and safety by eliminating slippery surfaces.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="200">
-                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide relative">
-                        <img src="before2.JPG" alt="Before image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img src="after2.JPG" alt="After image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
-                      </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide relative">
+                                <img src="before2.JPG" alt="Before image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    BEFORE</div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="after2.JPG" alt="After image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    AFTER</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">House Wash</h3>
-                    <p class="text-gray-600">
-                      Eliminated mold, mildew, and algae for a fresh, clean appearance.
-                      <br>
-                      Boosted overall home appearance and longevity of siding materials.
-                    </p>
-                  </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">House Wash</h3>
+                        <p class="text-gray-600">
+                            Eliminated mold, mildew, and algae for a fresh, clean appearance.
+                            <br>
+                            Boosted overall home appearance and longevity of siding materials.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up" data-aos-delay="300">
-                  <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide relative">
-                        <img src="before3.JPG" alt="Before image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">BEFORE</div>
-                      </div>
-                      <div class="swiper-slide relative">
-                        <img src="after3.JPG" alt="After image" class="w-full">
-                        <div class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">AFTER</div>
-                      </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl before-after-card" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="swiper before-after-slider shadow-lg rounded-lg mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide relative">
+                                <img src="before3.JPG" alt="Before image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    BEFORE</div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <img src="after3.JPG" alt="After image" class="w-full">
+                                <div
+                                    class="absolute top-4 left-4 bg-green-500 text-white text-sm font-bold py-1 px-3 rounded">
+                                    AFTER</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Restored and sealed deck to protect and beautify outdoor spaces.</h3>
-                    <p class="text-gray-600">
-                      Restored weathered wood to its original beauty and protected from further damage.
-                      <br>
-                      Sealed the deck for long-lasting protection and a refreshed outdoor living area.
-                    </p>
-                  </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Restored and sealed deck to protect and beautify outdoor
+                            spaces.</h3>
+                        <p class="text-gray-600">
+                            Restored weathered wood to its original beauty and protected from further damage.
+                            <br>
+                            Sealed the deck for long-lasting protection and a refreshed outdoor living area.
+                        </p>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-12">
-                <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                <a href="#contact"
+                    class="inline-block bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                     <i class="fas fa-images mr-2"></i>
                     View More Projects
                 </a>
@@ -494,42 +598,56 @@
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <h2 class="text-4xl font-bold mb-4">What our <span class="gradient-text">Customers</span> say</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">Our mission is to ensure every customer is highly satisfied with our outstanding service.</p>
+                <p class="text-lg text-gray-600">Our mission is to ensure every customer is highly satisfied with our
+                    outstanding service.</p>
             </div>
             <!-- Elfsight Google Reviews | Water Wave Pressure Washing -->
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-1d8aed0a-90c5-4089-ba99-08151b1e6c5a" data-elfsight-app-lazy></div>
-        </div>    
+        </div>
     </section>
 
     <!-- Our Clients Section -->
     <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900">Our Trusted <span class="gradient-text">Clients</span></h2>
-        <p class="text-lg md:text-xl text-gray-600 mb-10">Proudly serving top businesses and respected organizations in our community</p>
-        <div class="w-20 h-1 bg-blue-600 mx-auto mb-10"></div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
-          <img src="IMG_0516.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0517.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0520.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0521.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0522.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0523.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0524.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-          <img src="IMG_0525 2.JPG" alt="Client Logo" class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900">Our Trusted <span
+                    class="gradient-text">Clients</span></h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-10">Proudly serving top businesses and respected organizations
+                in our community</p>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-10"></div>
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-center">
+                <img src="IMG_0516.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0517.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0520.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0521.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0522.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0523.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0524.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <img src="IMG_0525 2.JPG" alt="Client Logo"
+                    class="mx-auto h-24 md:h-28 object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Pricing Section -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent <span class="gradient-text">Pricing</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent <span class="gradient-text">Pricing</span>
+                </h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">Competitive rates with no hidden fees. Custom quotes available for all services.</p>
+                <p class="text-lg text-gray-600">Competitive rates with no hidden fees. Custom quotes available for all
+                    services.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 service-card">
                     <div class="bg-gray-50 p-6 text-center border-b border-gray-200">
@@ -538,57 +656,77 @@
                     </div>
                     <div class="p-6">
                         <div class="text-center mb-6">
-                            <p class="text-lg text-gray-600">Pricing is based on a full property evaluation. We'll provide a custom quote tailored to your needs.</p>
+                            <p class="text-lg text-gray-600">Pricing is based on a full property evaluation. We'll
+                                provide a custom quote tailored to your needs.</p>
                         </div>
                         <ul class="space-y-3 mb-8">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> House Exterior Washing</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Driveway Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Deck/Patio Washing</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Fence Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free Estimates</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> House
+                                Exterior Washing</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Driveway
+                                Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Deck/Patio
+                                Washing</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Fence
+                                Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free
+                                Estimates</li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-xl overflow-hidden shadow-xl border-2 border-blue-500 transform scale-105 service-card">
+
+                <div
+                    class="bg-white rounded-xl overflow-hidden shadow-xl border-2 border-blue-500 transform scale-105 service-card">
                     <div class="bg-blue-600 p-6 text-center">
-                        <span class="inline-block bg-yellow-400 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">Most Popular</span>
+                        <span
+                            class="inline-block bg-yellow-400 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">Most
+                            Popular</span>
                         <h3 class="text-2xl font-bold text-white">Commercial</h3>
                         <p class="text-blue-100 mt-2">For businesses of all sizes</p>
                     </div>
                     <div class="p-6">
                         <div class="text-center mb-6">
-                            <p class="text-lg text-gray-600">Pricing determined after site evaluation to ensure accurate, fair quotes for every business.</p>
+                            <p class="text-lg text-gray-600">Pricing determined after site evaluation to ensure
+                                accurate, fair quotes for every business.</p>
                         </div>
                         <ul class="space-y-3 mb-8">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Building Exterior Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Parking Lot Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Sidewalk Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Dumpster Area Cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free Consultation</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Maintenance Plans Available</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Building
+                                Exterior Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Parking Lot
+                                Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Sidewalk
+                                Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Dumpster Area
+                                Cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Free
+                                Consultation</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Maintenance
+                                Plans Available</li>
                         </ul>
                         <div class="text-center">
-                            <a href="#contact" class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="inline-block w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 Get Quote
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="bg-blue-50 rounded-xl p-8 mt-12 border-l-4 border-blue-500">
                 <div class="flex flex-col md:flex-row items-center justify-between">
                     <div class="mb-6 md:mb-0">
                         <h3 class="text-xl font-bold mb-2">Need a custom solution?</h3>
-                        <p class="text-gray-600">Contact us for a personalized quote tailored to your specific needs.</p>
+                        <p class="text-gray-600">Contact us for a personalized quote tailored to your specific needs.
+                        </p>
                     </div>
-                    <a href="#contact" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                    <a href="#contact"
+                        class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow cta-button hover:ring hover:ring-blue-300 hover:ring-offset-2">
                         Request Custom Quote
                     </a>
                 </div>
@@ -600,11 +738,13 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span
+                        class="gradient-text">Questions</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">Find answers to our most commonly asked questions about our pressure washing services.</p>
+                <p class="text-lg text-gray-600">Find answers to our most commonly asked questions about our pressure
+                    washing services.</p>
             </div>
-            
+
             <div class="space-y-6">
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <button class="faq-toggle-button flex justify-between items-center w-full text-left">
@@ -615,44 +755,54 @@
                         <p>1-3 hours depending on size.</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <button class="faq-toggle-button flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold text-gray-800">Is pressure washing safe for all surfaces?</h3>
                         <i class="fas fa-chevron-down text-blue-600"></i>
                     </button>
                     <div class="mt-4 text-gray-600 hidden">
-                        <p>Not all surfaces can withstand high-pressure washing. We assess each surface and use appropriate techniques, including soft washing for delicate areas like roofs, windows, and some siding materials. Our experts know exactly what pressure and cleaning solutions to use for each surface.</p>
+                        <p>Not all surfaces can withstand high-pressure washing. We assess each surface and use
+                            appropriate techniques, including soft washing for delicate areas like roofs, windows, and
+                            some siding materials. Our experts know exactly what pressure and cleaning solutions to use
+                            for each surface.</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <button class="faq-toggle-button flex justify-between items-center w-full text-left">
-                        <h3 class="text-lg font-bold text-gray-800">Are your cleaning solutions environmentally friendly?</h3>
+                        <h3 class="text-lg font-bold text-gray-800">Are your cleaning solutions environmentally
+                            friendly?</h3>
                         <i class="fas fa-chevron-down text-blue-600"></i>
                     </button>
                     <div class="mt-4 text-gray-600 hidden">
-                        <p>Yes, we use eco-friendly, biodegradable cleaning solutions that effectively remove dirt, mold, and mildew without harming your landscaping, pets, or the environment. Our process is designed to be both powerful and responsible.</p>
+                        <p>Yes, we use eco-friendly, biodegradable cleaning solutions that effectively remove dirt,
+                            mold, and mildew without harming your landscaping, pets, or the environment. Our process is
+                            designed to be both powerful and responsible.</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <button class="faq-toggle-button flex justify-between items-center w-full text-left">
-                        <h3 class="text-lg font-bold text-gray-800">How often should I have my property pressure washed?</h3>
+                        <h3 class="text-lg font-bold text-gray-800">How often should I have my property pressure washed?
+                        </h3>
                         <i class="fas fa-chevron-down text-blue-600"></i>
                     </button>
                     <div class="mt-4 text-gray-600 hidden">
-                        <p>For most residential properties, we recommend pressure washing once or twice a year to maintain appearance and prevent buildup of harmful substances. Commercial properties may require more frequent cleaning depending on foot traffic and location.</p>
+                        <p>For most residential properties, we recommend pressure washing once or twice a year to
+                            maintain appearance and prevent buildup of harmful substances. Commercial properties may
+                            require more frequent cleaning depending on foot traffic and location.</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl p-6 shadow-md">
                     <button class="faq-toggle-button flex justify-between items-center w-full text-left">
                         <h3 class="text-lg font-bold text-gray-800">Do you offer any guarantees?</h3>
                         <i class="fas fa-chevron-down text-blue-600"></i>
                     </button>
                     <div class="mt-4 text-gray-600 hidden">
-                        <p>Absolutely! We offer a 100% satisfaction guarantee. If you're not completely satisfied with our work, we'll return and address any areas of concern at no additional cost to you.</p>
+                        <p>Absolutely! We offer a 100% satisfaction guarantee. If you're not completely satisfied with
+                            our work, we'll return and address any areas of concern at no additional cost to you.</p>
                     </div>
                 </div>
             </div>
@@ -666,13 +816,16 @@
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Property?</h2>
-                        <p class="text-lg text-gray-600 mb-6">Schedule your free consultation today and see how Water Wave can revitalize your home or business.</p>
+                        <p class="text-lg text-gray-600 mb-6">Schedule your free consultation today and see how Water
+                            Wave can revitalize your home or business.</p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="#contact"
+                                class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 <i class="fas fa-calendar-alt mr-2"></i>
                                 Schedule Service
                             </a>
-                            <a href="tel:205-948-5038" class="bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+                            <a href="tel:205-948-5038"
+                                class="bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                                 <i class="fas fa-phone-alt mr-2"></i>
                                 205-948-5038
                             </a>
@@ -694,16 +847,17 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <h2 class="text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600">Ready to get started? Contact us for a free quote or to schedule your service.</p>
+                <p class="text-lg text-gray-600">Ready to get started? Contact us for a free quote or to schedule your
+                    service.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <div class="bg-blue-50 p-8 rounded-xl mb-8">
@@ -739,7 +893,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="bg-blue-50 p-8 rounded-xl">
                         <h3 class="text-2xl font-bold mb-6">Service Areas</h3>
                         <div class="grid grid-cols-2 gap-4">
@@ -782,29 +936,37 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center">
                     <h3 class="text-2xl font-bold mb-6 text-center">Request a Free Quote</h3>
                     <form class="w-full">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="name">Your Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="John Doe">
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105"
+                                    placeholder="John Doe">
                             </div>
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="email">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="john@example.com">
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105"
+                                    placeholder="john@example.com">
                             </div>
                         </div>
-                        
+
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-gray-700 mb-2 font-medium" for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="(555) 123-4567">
+                                <input type="tel" id="phone"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105"
+                                    placeholder="(555) 123-4567">
                             </div>
                             <div>
-                                <label class="block text-gray-700 mb-2 font-medium" for="service">Primary Service Needed</label>
-                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
+                                <label class="block text-gray-700 mb-2 font-medium" for="service">Primary Service
+                                    Needed</label>
+                                <select id="service"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
                                     <option>Select a Service</option>
                                     <option>Concrete Cleaning</option>
                                     <option>Brick Cleaning</option>
@@ -815,8 +977,10 @@
                             </div>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 mb-2 font-medium" for="secondary-service">Second Service (optional)</label>
-                            <select id="secondary-service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
+                            <label class="block text-gray-700 mb-2 font-medium" for="secondary-service">Second Service
+                                (optional)</label>
+                            <select id="secondary-service"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105">
                                 <option>Select a Service</option>
                                 <option>Concrete Cleaning</option>
                                 <option>Brick Cleaning</option>
@@ -824,35 +988,45 @@
                                 <option>Deck/Fence Wash</option>
                                 <option>Commercial Pressure Washing</option>
                             </select>
-                            <p class="text-xs text-gray-500 mt-2">If you need more than one service, please select a second option.</p>
+                            <p class="text-xs text-gray-500 mt-2">If you need more than one service, please select a
+                                second option.</p>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 mb-2 font-medium" for="message">Add details about your project</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105" placeholder="Add details about your project"></textarea>
+                            <label class="block text-gray-700 mb-2 font-medium" for="message">Add details about your
+                                project</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 focus:scale-105"
+                                placeholder="Add details about your project"></textarea>
                         </div>
-                        
-                        <button onclick="sendEmail()" type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
+
+                        <button onclick="sendEmail()" type="submit"
+                            class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg cta-button flex items-center justify-center hover:ring hover:ring-blue-300 hover:ring-offset-2">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Send Message
                         </button>
                         <script>
-                            function sendEmail(event) {
-                                        event.preventDefault(); // Prevent actual form submission
+                            async function sendEmail(event) {
+                                event.preventDefault();
 
-                                        const name = document.getElementById("name").value;
-                                        const email = document.getElementById("email").value;
-                                        const phone = document.getElementById("phone").value;
-                                        const service = document.getElementById("service").value;
-                                        const secondService = document.getElementById("secondary-service").value;
-                                        const message = document.getElementById("message").value;
+                                const name = document.getElementById("name").value.trim();
+                                const email = document.getElementById("email").value.trim();
+                                const phone = document.getElementById("phone").value.trim();
+                                const service = document.getElementById("service").value;
+                                const secondService = document.getElementById("secondary-service").value;
+                                const message = document.getElementById("message").value.trim();
 
-                                        const subject = `Quote Request from ${name}`;
-                                        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0APrimary Service: ${service}%0D%0ASecondary Service: ${secondService}%0D%0ADetails:%0D%0A${message}`;
+                                const res = await fetch("/api/send-email", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ name, email, phone, service, secondService, message }),
+                                });
 
-                                        window.location.href = `mailto:youremail@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-                                        alert("Thank you for reaching out, will get back to you asap!")
-                                    }
+                                if (res.ok) {
+                                    alert("Thank you for reaching out, we will get back to you asap!");
+                                } else {
+                                    alert("Something went wrong. Please try again.");
+                                }
+                            }
                         </script>
                     </form>
                 </div>
@@ -868,46 +1042,61 @@
                     <div class="flex items-center mb-6">
                         <img src="IMG_0954.jpeg" alt="Water Wave Logo" class="h-12 w-auto">
                     </div>
-                    <p class="text-gray-400 mb-6">Professional pressure washing services for residential and commercial properties. Quality service guaranteed.</p>
+                    <p class="text-gray-400 mb-6">Professional pressure washing services for residential and commercial
+                        properties. Quality service guaranteed.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                        <a href="#"
+                            class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
                             <i class="fab fa-facebook-f text-white"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                        <a href="#"
+                            class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
                             <i class="fab fa-twitter text-white"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition duration-300">
+                        <a href="#"
+                            class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition duration-300">
                             <i class="fab fa-instagram text-white"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                        <a href="#"
+                            class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition duration-300">
                             <i class="fab fa-linkedin-in text-white"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
-                        <li><a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
-                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a>
+                        </li>
+                        <li><a href="#projects"
+                                class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#testimonials"
+                                class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-bold mb-6">Our Services</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Concrete Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brick Cleaning</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">House Wash</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Deck/Fence Wash</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial Pressure Washing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Concrete
+                                Cleaning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brick
+                                Cleaning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">House Wash</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Deck/Fence
+                                Wash</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Commercial
+                                Pressure Washing</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-bold mb-6">Hours of Operation</h3>
                     <ul class="space-y-3">
@@ -930,45 +1119,46 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-6">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                        &copy; 2025 Water Wave Pressure Washing. All rights reserved. <br> Developed by <span class="text-white font-bold">Triune Tek LLC</span>
+                        &copy; 2025 Water Wave Pressure Washing. All rights reserved. <br> Developed by <span
+                            class="text-white font-bold">Triune Tek LLC</span>
                     </p>
                     <div class="flex space-x-6">
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true
-      });
-      // Swiper sliders for Before & After
-      document.addEventListener('DOMContentLoaded', function () {
-        const sliders = document.querySelectorAll('.before-after-slider');
-        sliders.forEach((slider) => {
-          new Swiper(slider, {
-            loop: true,
-            autoplay: {
-              delay: 4000,
-            },
-            pagination: {
-              el: slider.querySelector('.swiper-pagination'),
-              clickable: true,
-            },
-          });
-        });
-      });
-    </script>
-    <script>
-      document.querySelectorAll('.faq-toggle-button').forEach(button => {
-        button.addEventListener('click', () => {
-          const content = button.nextElementSibling;
-          const icon = button.querySelector('i');
-          content.classList.toggle('hidden');
-          icon.classList.toggle('fa-chevron-down');
-          icon.classList.toggle('fa-chevron-up');
-        });
-      });
-    </script>
+                        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                        <script>
+                            AOS.init({
+                                duration: 800,
+                                once: true
+                            });
+                            // Swiper sliders for Before & After
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const sliders = document.querySelectorAll('.before-after-slider');
+                                sliders.forEach((slider) => {
+                                    new Swiper(slider, {
+                                        loop: true,
+                                        autoplay: {
+                                            delay: 4000,
+                                        },
+                                        pagination: {
+                                            el: slider.querySelector('.swiper-pagination'),
+                                            clickable: true,
+                                        },
+                                    });
+                                });
+                            });
+                        </script>
+                        <script>
+                            document.querySelectorAll('.faq-toggle-button').forEach(button => {
+                                button.addEventListener('click', () => {
+                                    const content = button.nextElementSibling;
+                                    const icon = button.querySelector('i');
+                                    content.classList.toggle('hidden');
+                                    icon.classList.toggle('fa-chevron-down');
+                                    icon.classList.toggle('fa-chevron-up');
+                                });
+                            });
+                        </script>
